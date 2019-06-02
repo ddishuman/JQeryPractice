@@ -2,13 +2,11 @@
 
 $(document).ready( function()
 {
-  $("div").click(function()
-  {
-    console.log("Single click");
+  $("div").mouseenter(function(){
+    console.log("Enter mouse");
   });
 
-  $("div").dblclick(function()
-  {
-    console.log("Double click");
+  $("span").mouseenter(function(){
+    console.log("Enter span");
   });
 });
