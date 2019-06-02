@@ -2,8 +2,13 @@
 
 $(document).ready( function()
 {
-  $("SubmitButton").click(function(event)
+  $("div").click(function()
   {
-    event.preventDefault();
+    console.log("A div is clicked");
+  });
+
+  $("#EpicID").click(function()
+  {
+    alert("Epic ID alert");
   });
 });
