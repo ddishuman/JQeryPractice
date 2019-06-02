@@ -4,11 +4,11 @@ $(document).ready( function()
 {
   $("div").click(function()
   {
-    console.log("A div is clicked");
+    console.log("Single click");
   });
 
-  $("#EpicID").click(function()
+  $("div").dblclick(function()
   {
-    alert("Epic ID alert");
+    console.log("Double click");
   });
 });
