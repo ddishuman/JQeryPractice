@@ -2,9 +2,16 @@
 
 $(document).ready( function()
 {
-  var array = ["Batman", "Pizza", "Yoda"];
+  $("#EpicButton").click(function() {
+    var div = $("div")[0];
 
-  $.each(array, function(index, value){
-    console.log(index + " : " + value);
+    $.data(div, "epic",
+    {
+      name: "Frahaan",
+      age: 27
+    });
+
+    $("span:first").text($.data(div, "epic").name);
+    $("span:last").text($.data(div, "epic").age);
   });
 });
