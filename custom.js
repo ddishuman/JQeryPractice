@@ -2,7 +2,15 @@
 
 $(document).ready( function()
 {
-  $("div").click(function(){
-    $(this).css({"color": "#567FFA", "background-color": "red"});
+  $("#AddClassButton").click(function(){
+    $("div").addClass("blue");
+  });
+
+  $("#RemoveClassButton").click(function(){
+    $("div").removeClass("blue");
+  });
+
+  $("#ToggleClassButton").click(function(){
+    $("div").toggleClass("blue");
   });
 });
