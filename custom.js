@@ -12,9 +12,12 @@ $(document).ready( function()
     }, 4000);
   });
 
-  $("#StopButton").click(function()
+  $("#ToggleButton").click(function()
   {
-    $("#DarthVader").stop();
+    $("#DarthVader").toggle(3000, function(){
+      console.log("Darth Vader is toggling now");
+    });
+
   });
 
 
