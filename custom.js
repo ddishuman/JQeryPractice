@@ -6,5 +6,7 @@ $(document).ready( function()
     console.log(event.which + "Key pressed");
   });
 
-
+  $("input").keypress(function(event){
+    console.log(event.which + "single press");
+  });
 });
