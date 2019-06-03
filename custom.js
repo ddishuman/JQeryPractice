@@ -2,7 +2,7 @@
 
 $(document).ready( function()
 {
-  $("div").eq(3).addClass("red");
-
+  //$("div").children().addClass("red");
+  $("div").children(".hello").addClass("red");
 
 });
