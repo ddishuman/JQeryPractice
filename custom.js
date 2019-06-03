@@ -4,12 +4,14 @@ $(document).ready( function()
 {
   $("#EpicButton").click(function()
   {
-    $.get("favorite.php", function(data,status){
+    $.post("favorite.php",{
+      "food": "Pizza",
+      "game": "Half-Life 3"
+    },
+    function(data, status){
       console.log(data);
-
-      $("div").html(data);
-      console.log(status);
     });
+
   });
 
 
