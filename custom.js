@@ -2,19 +2,15 @@
 
 $(document).ready( function()
 {
-  $("#AppendButton").click(function(){
-    $("#EpicDiv").append("<b>Append</b>");
+  $("#RemoveButton").click(function(){
+    $("div").remove();
   });
 
-  $("#PrependButton").click(function(){
-    $("#EpicDiv").prepend("<b>Prepend</b>");
+  $("#EmptyButton").click(function(){
+    $("div").empty();
   });
 
-  $("#AfterButton").click(function(){
-    $("#EpicDiv").after("<b>After</b>");
-  });
-
-  $("#BeforeButton").click(function(){
-    $("#EpicDiv").before("<b>Before</b>");
+  $("#RemoveFilterButton").click(function(){
+    $("div").remove(".epicDiv");
   });
 });

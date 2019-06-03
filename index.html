@@ -7,19 +7,28 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="custom.js"></script>
     <style>
-      #EpicDiv
+      #ParentDiv
       {
-        color: red;
+        background-color: red;
+        color: white;
+        min-width: 200px;
+        min-height: 400px;
       }
     </style>
   </head>
 
   <body>
-    <div id="EpicDiv"> Hello World</div>
-    <button id="AppendButton">Append</button>
-    <button id="PrependButton">Preend</button>
-    <button id="AfterButton">After</button>
-    <button id="BeforeButton">Before</button>
+    <div id="ParentDiv" class="epicDiv">
+      Hello World
+      <div>Pizza</div>
+      <div>Fish Fingers</div>
+      <div>Mash Potato</div>
+    </div>
 
+    <div>Pizza is awesome</div>
+
+    <button id="RemoveButton">Remove</button>
+    <button id="EmptyButton">Empty</button>
+    <button id="RemoveFilterButton">Filter remove</button>
   </body>
 </html>
