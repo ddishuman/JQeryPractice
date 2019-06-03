@@ -2,21 +2,31 @@
 
 $(document).ready( function()
 {
-  // Select everything
-  //$("div").addClass("red");
+  $("#HideButton").click(function(){
+    $("div").hide();
+  });
 
-  // Select the first item
-  //$("div").first().addClass("red");
+  $("#ShowButton").click(function(){
+    $("div").show();
+  });
 
-  // Select the last item
-  //$("div").last().addClass("red");
+  $("#ToggleButton").click(function(){
+    $("div").toggle();
+  });
 
-  // Select by index
-  //$("div").eq(1).addClass("red");
+  $("#SlowButton").click(function(){
+    $("div").toggle("slow");
+  });
 
-  // Filter based on condition
-  //$("div").filter(".hello").addClass("red");
+  $("#FastButton").click(function(){
+    $("div").toggle("fast");
+  });
 
-  // Filter not based on condition
-  $("div").not(".hello").addClass("red");
+  $("#CustomeSpeedButton").click(function(){
+    var time = parseInt($("#Time").val());
+    $("div").toggle(time, function()
+    {
+      console.log("Effect finished");
+    });
+  });
 });
