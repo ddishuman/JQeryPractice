@@ -2,23 +2,10 @@
 
 $(document).ready( function()
 {
-  $("div").hover(function(){
-    console.log("Entered div");
-    $(this).css("color", "yellow");
-  },
-  function(){
-    console.log("Exited div");
-    $(this).css("color", "black");
+  $("div").click(function(){
+    console.log("Clicked div");
   });
-
-  /*$("div").mouseenter(function(){
-    console.log("Enter mouse");
-    $(this).css("color", "red");
+  $("div").mousedown(function(){
+    console.log("Mouse down");
   });
-
-  $("div").mouseleave(function(){
-    console.log("Exited div");
-    $(this).css("color", "black");
-  });*/
-
 });
