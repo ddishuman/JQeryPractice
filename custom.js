@@ -2,12 +2,8 @@
 
 $(document).ready( function()
 {
-  $("form").submit(function(){
-    alert("Form has been submitted");
+  $("*").focus(function(){
+    console.log("Focused on me");
   });
 
-  $("input").change(function(){
-    console.log($(this).val());
-    console.log("It has now changed.");
-  });
 });
