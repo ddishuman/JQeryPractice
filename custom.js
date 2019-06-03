@@ -2,7 +2,6 @@
 
 $(document).ready( function()
 {
-  //$("#Hello").parent().addClass("red");
-  $("#Hello").parents().addClass("red");
+  $("#Mash").siblings(".epicClass").addClass("red")
 
 });
