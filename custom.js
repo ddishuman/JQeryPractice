@@ -2,31 +2,21 @@
 
 $(document).ready( function()
 {
-  $("#HideButton").click(function(){
-    $("div").hide();
+  $("#FadeInButton").click(function(){
+    $("div").fadeIn();
   });
 
-  $("#ShowButton").click(function(){
-    $("div").show();
+  $("#FadeOutButton").click(function(){
+    $("div").fadeOut();
   });
 
-  $("#ToggleButton").click(function(){
-    $("div").toggle();
+  $("#FadeToggleButton").click(function(){
+    $("div").fadeToggle();
   });
 
-  $("#SlowButton").click(function(){
-    $("div").toggle("slow");
+  $("#FadeToButton").click(function(){
+    // values range between 0 and 1 for the opacity
+    $("div").fadeTo("slow", 0.75);
   });
 
-  $("#FastButton").click(function(){
-    $("div").toggle("fast");
-  });
-
-  $("#CustomeSpeedButton").click(function(){
-    var time = parseInt($("#Time").val());
-    $("div").toggle(time, function()
-    {
-      console.log("Effect finished");
-    });
-  });
 });
