@@ -2,24 +2,29 @@
 
 $(document).ready( function()
 {
-  var obj1 =
-  {
-    apple:0,
-    banana: {weight:52, price:100},
-    cherry: 97
-  }
+  $.fn.extend({
+    check: function()
+    {
+      return this.each(function(){
+        this.checked = true;
+        console.log("Check");
+      });
+    },
+    uncheck: function()
+    {
+      return this.each(function(){
+        this.checked = false;
+        console.log("UnCheck");
+      });
+    }
+  });
 
-  var obj2 =
-  {
-    banana: {price: 200},
-    taste: 100
-  }
+    $("#CheckButton").click(function(){
+      $("input[type='checkbox']").check();
+    });
 
-  console.log(obj1);
-  console.log(obj2);
+    $("#UnCheckButton").click(function(){
+      $("input[type='checkbox']").uncheck();
+    });
 
-  $.extend(obj1, obj2);
-
-  console.log(obj1);
-  console.log(obj2);
 });
