@@ -2,22 +2,9 @@
 
 $(document).ready( function()
 {
-  $("#AnimateButton").click(function()
+  $("#EpicButton").click(function()
   {
-    $("#DarthVader").animate({
-      left: '200px',
-      //opacity: '0.5'
-      padding: '10px',
-      height: '+=100px'
-    }, 4000);
-  });
-
-  $("#ToggleButton").click(function()
-  {
-    $("#DarthVader").toggle(3000, function(){
-      console.log("Darth Vader is toggling now");
-    });
-
+    $("#AjaxDiv").load("textfile.txt")
   });
 
 
