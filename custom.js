@@ -2,7 +2,8 @@
 
 $(document).ready( function()
 {
-  $(window).resize(function(){
-    console.log("Resize event has occured.");
+  $("div").click(function(){
+    console.log($(this).css("color"));
+    $(this).css("color", "#567FFA");
   });
 });
