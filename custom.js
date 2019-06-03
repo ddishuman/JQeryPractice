@@ -4,12 +4,11 @@ $(document).ready( function()
 {
   $("#EpicButton").click(function()
   {
-    $.getJSON("favorite.json", function(result){
-      console.log(result);
+    $.get("favorite.php", function(data,status){
+      console.log(data);
 
-      $.each(result, function(index, value){
-        console.log(index + " - " + value);
-      });
+      $("div").html(data);
+      console.log(status);
     });
   });
 
