@@ -2,5 +2,7 @@
 
 $(document).ready( function()
 {
-  console.log($.isWindow(window));
+  var time = $.now();
+
+  console.log(time);
 });
