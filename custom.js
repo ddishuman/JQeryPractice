@@ -4,7 +4,13 @@ $(document).ready( function()
 {
   $("#EpicButton").click(function()
   {
-    $("#AjaxDiv").load("textfile.txt")
+    $.getJSON("favorite.json", function(result){
+      console.log(result);
+
+      $.each(result, function(index, value){
+        console.log(index + " - " + value);
+      });
+    });
   });
 
 
