@@ -2,12 +2,10 @@
 
 $(document).ready( function()
 {
-  $("*").focus(function(){
-    console.log("Focused on me");
-  });
-
-  $("*").blur(function(){
-
-    console.log("Please don't leave me!");
+  var num=0;
+  $("textarea").scroll(function(){
+    //console.log("Scrolling yay");
+    num++;
+    console.log(num);
   });
 });
