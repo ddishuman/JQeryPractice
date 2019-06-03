@@ -2,15 +2,7 @@
 
 $(document).ready( function()
 {
-  $("#RemoveButton").click(function(){
-    $("div").remove();
-  });
+  $("div").eq(3).addClass("red");
 
-  $("#EmptyButton").click(function(){
-    $("div").empty();
-  });
 
-  $("#RemoveFilterButton").click(function(){
-    $("div").remove(".epicDiv");
-  });
 });
