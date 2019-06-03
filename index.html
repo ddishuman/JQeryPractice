@@ -8,18 +8,23 @@
     <script type="text/javascript" src="custom.js"></script>
 
     <style>
-      .blue
+      #RedBox
       {
-        color: blue;
+        width: 200px;
+        height: 350px;
+        background-color: red;
+        padding: 10px;
+        border-size: 2px;
+        border-color: black;
+        border-style: solid;
+        margin: 90px
       }
     </style>
   </head>
 
   <body>
-    <div>Hello world</div>
+    <div id="RedBox"> test</div>
+    <button id="ClickMe">Change width & height</button>
 
-    <button id="AddClassButton"> Add Class</button>
-    <button id="RemoveClassButton"> Remove Class</button>
-    <button id="ToggleClassButton">Toggle Class</button>
   </body>
 </html>
