@@ -2,19 +2,16 @@
 
 $(document).ready( function()
 {
-  $("#SlideDownButton").click(function()
+  $("#AnimateButton").click(function()
   {
-    $("#Panel").slideDown();
+    $("#DarthVader").animate({
+      left: '500px',
+      //opacity: '0.5'
+      padding: '10px',
+      height: '+=100px'
+    });
   });
 
-  $("#SlideUpButton").click(function()
-  {
-    $("#Panel").slideUp();
-  });
 
-  $("#SlideToggleButton").click(function()
-  {
-    $("#Panel").slideToggle();
-  });
 
 });
