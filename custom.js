@@ -2,8 +2,9 @@
 
 $(document).ready( function()
 {
-  var epicArray = [34, 27, "Batman", "Pizza"];
+  var array = ["Batman", "Pizza", "Yoda"];
 
-  console.log($.inArray(34, epicArray));
-  console.log($.inArray("Batman", epicArray));
+  $.each(array, function(index, value){
+    console.log(index + " : " + value);
+  });
 });
