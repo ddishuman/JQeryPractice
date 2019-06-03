@@ -3,7 +3,6 @@
 $(document).ready( function()
 {
   $("div").click(function(){
-    console.log($(this).css("color"));
-    $(this).css("color", "#567FFA");
+    $(this).css({"color": "#567FFA", "background-color": "red"});
   });
 });
