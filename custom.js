@@ -2,15 +2,8 @@
 
 $(document).ready( function()
 {
-  $("input").keydown(function(event){
-    console.log(event.which + "Key pressed");
+  $("form").submit(function(){
+    alert("Form has been submitted");
   });
 
-  $("input").keypress(function(event){
-    console.log(event.which + "single press");
-  });
-
-  $("input").keyup(function(event){
-    console.log(event.which + "key was released");
-  });
 });
