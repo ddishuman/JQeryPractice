@@ -2,10 +2,7 @@
 
 $(document).ready( function()
 {
-  var num=0;
-  $("textarea").scroll(function(){
-    //console.log("Scrolling yay");
-    num++;
-    console.log(num);
+  $(window).resize(function(){
+    console.log("Resize event has occured.");
   });
 });
