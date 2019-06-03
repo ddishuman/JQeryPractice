@@ -5,13 +5,17 @@ $(document).ready( function()
   $("#AnimateButton").click(function()
   {
     $("#DarthVader").animate({
-      left: '500px',
+      left: '200px',
       //opacity: '0.5'
       padding: '10px',
       height: '+=100px'
-    });
+    }, 4000);
   });
 
+  $("#StopButton").click(function()
+  {
+    $("#DarthVader").stop();
+  });
 
 
 });
