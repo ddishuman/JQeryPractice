@@ -2,16 +2,17 @@
 
 $(document).ready( function()
 {
-  $("#EpicButton").click(function() {
-    var div = $("div")[0];
+  var func = function()
+  {
+    console.log("Hello world");
+    console.log(this);
+  };
 
-    $.data(div, "epic",
-    {
-      name: "Frahaan",
-      age: 27
-    });
+  var object =
+  {
+    food: "Pizza"
+  };
 
-    $("span:first").text($.data(div, "epic").name);
-    $("span:last").text($.data(div, "epic").age);
-  });
+  var proxyFunction = $.proxy(func, object);
+  proxyFunction();
 });
