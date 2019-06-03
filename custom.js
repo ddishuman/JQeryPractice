@@ -2,29 +2,8 @@
 
 $(document).ready( function()
 {
-  $.fn.extend({
-    check: function()
-    {
-      return this.each(function(){
-        this.checked = true;
-        console.log("Check");
-      });
-    },
-    uncheck: function()
-    {
-      return this.each(function(){
-        this.checked = false;
-        console.log("UnCheck");
-      });
-    }
-  });
+  var epicArray = [34, 27, "Batman", "Pizza"];
 
-    $("#CheckButton").click(function(){
-      $("input[type='checkbox']").check();
-    });
-
-    $("#UnCheckButton").click(function(){
-      $("input[type='checkbox']").uncheck();
-    });
-
+  console.log($.inArray(34, epicArray));
+  console.log($.inArray("Batman", epicArray));
 });
