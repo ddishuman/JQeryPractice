@@ -7,22 +7,27 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="custom.js"></script>
     <style>
-      .red
+      #Panel, #SlideDownButton, #SlideUpButton
       {
-        color: red;
+        padding: 5px;
+        text-align: center;
+        background-color: #cccccc;
+        border: solid 1px #c3c3c3;
+      }
+
+      #Panel
+      {
+        padding: 50px;
+        display: none;
       }
     </style>
   </head>
 
   <body>
-      <div>I love tuna pizza</div>
+    <div id="SlideDownButton">Click to slide down panel</div>
+    <div id="Panel">Hello world</div>
+    <div id="SlideUpButton">Click to slide up panel</div>
 
-      <button id="FadeInButton">Fade in</button>
-      <button id="FadeOutButton">Fade out</button>
-      <button id="FadeToggleButton">Fade toggle</button>
-      <button id="FadeToButton">Fade to</button>
-
-
-
+    <button id="SlideToggleButton">Slide Toggle</button>
   </body>
 </html>

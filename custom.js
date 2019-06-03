@@ -2,21 +2,19 @@
 
 $(document).ready( function()
 {
-  $("#FadeInButton").click(function(){
-    $("div").fadeIn();
+  $("#SlideDownButton").click(function()
+  {
+    $("#Panel").slideDown();
   });
 
-  $("#FadeOutButton").click(function(){
-    $("div").fadeOut();
+  $("#SlideUpButton").click(function()
+  {
+    $("#Panel").slideUp();
   });
 
-  $("#FadeToggleButton").click(function(){
-    $("div").fadeToggle();
-  });
-
-  $("#FadeToButton").click(function(){
-    // values range between 0 and 1 for the opacity
-    $("div").fadeTo("slow", 0.75);
+  $("#SlideToggleButton").click(function()
+  {
+    $("#Panel").slideToggle();
   });
 
 });
