@@ -9,4 +9,8 @@ $(document).ready( function()
   $("input").keypress(function(event){
     console.log(event.which + "single press");
   });
+
+  $("input").keyup(function(event){
+    console.log(event.which + "key was released");
+  });
 });
