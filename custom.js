@@ -2,15 +2,9 @@
 
 $(document).ready( function()
 {
-  $("div").click(function(){
-    console.log("Clicked div");
+  $("input").keydown(function(event){
+    console.log(event.which + "Key pressed");
   });
 
-  $("div").mousedown(function(){
-    console.log("Mouse down");
-  });
 
-  $("div").mouseup(function(){
-    console.log("Mouse up");
-  });
 });
