@@ -2,7 +2,16 @@
 
 $(document).ready( function()
 {
-  $("div").mouseenter(function(){
+  $("div").hover(function(){
+    console.log("Entered div");
+    $(this).css("color", "yellow");
+  },
+  function(){
+    console.log("Exited div");
+    $(this).css("color", "black");
+  });
+
+  /*$("div").mouseenter(function(){
     console.log("Enter mouse");
     $(this).css("color", "red");
   });
@@ -10,9 +19,6 @@ $(document).ready( function()
   $("div").mouseleave(function(){
     console.log("Exited div");
     $(this).css("color", "black");
-  });
+  });*/
 
-  $("span").mouseenter(function(){
-    console.log("Enter span");
-  });
 });
